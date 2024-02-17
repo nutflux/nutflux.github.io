@@ -990,7 +990,7 @@ document.addEventListener("DOMContentLoaded", function() {
 "https://cdn.7tv.app/emote/6349c4629e9ae5efe290c509/2x.webp",
 "https://cdn.7tv.app/emote/65cb6c5ea00fa4f2a6305741/2x.webp",
 
-        // Add more image paths as needed
+        
     ];
 
     const container = document.getElementById("image-container");
@@ -1001,8 +1001,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const randomSourceIndex = Math.floor(Math.random() * imageSources.length);
 
         image.src = imageSources[randomSourceIndex];
-        image.style.width = Math.floor(Math.random() * 100) + "px"; // Random width
-        image.style.transform = "rotate(" + Math.floor(Math.random() * 360) + "deg)"; // Random rotation
+        image.style.width = Math.floor(Math.random() * 100) + "px"; 
+        image.style.transform = "rotate(" + Math.floor(Math.random() * 360) + "deg)"; 
         image.style.position = "absolute";
         image.style.left = Math.random() * window.innerWidth + "px";
         image.style.top = Math.random() * window.innerHeight + "px";
@@ -1010,11 +1010,11 @@ document.addEventListener("DOMContentLoaded", function() {
         container.appendChild(image);
     }
 
-    // Position the overlay image
-    overlayImage.style.position = "fixed"; // You can use "absolute" or "fixed" based on your requirements
+    
+    overlayImage.style.position = "fixed"; 
     overlayImage.style.width = "40%";
     overlayImage.style.height = "20%";
     overlayImage.style.left = "0";
     overlayImage.style.top = "0";
-    overlayImage.style.zIndex = "100"; // Make sure it's above the other images
+    overlayImage.style.zIndex = "100"; 
 });
